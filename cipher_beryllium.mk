@@ -1,20 +1,20 @@
 #
-# Copyright (C) 2018-2021 The LineageOS Project
+# Copyright (C) 2018-2021 The cipherOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common cipher stuff.
+$(call inherit-product, vendor/cipher/config/common.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 $(call inherit-product, device/xiaomi/beryllium/device-hidl.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_beryllium
+PRODUCT_NAME := cipher_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
